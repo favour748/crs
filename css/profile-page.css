@@ -13,38 +13,16 @@ body {
   height: 100vh;
 }
 
-header {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  height: 10%;
-}
-header p {
-  padding: 0;
-  margin: 0.5rem;
-}
 .icon {
   margin: 0.5rem;
   gap: 12px;
   display: flex;
   justify-content: space-between;
 }
-/* body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-} */
 
 .profile-container {
-  padding: 0 1rem;
+  padding: 1rem;
   width: 100%;
-
   text-align: center;
 }
 
@@ -143,6 +121,9 @@ footer a p {
   color: #909090;
   padding: 0;
   margin: 0;
+}
+footer a .active {
+  color: #fbd704;
 }
 a {
   text-align: center;

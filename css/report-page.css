@@ -131,6 +131,9 @@ footer a p {
   padding: 0;
   margin: 0;
 }
+footer a .active {
+  color: #fbd704;
+}
 a {
   text-align: center;
   text-decoration: none;

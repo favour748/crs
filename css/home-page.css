@@ -5,10 +5,10 @@ body {
   padding: 0;
   background-color: black;
   color: white;
+  height: 100vh;
 }
 
 header {
-  padding: 2rem;
   background-color: #333;
   display: flex;
   gap: 8px;
@@ -18,9 +18,9 @@ header {
   width: 10%;
 }
 .search-bar {
-  padding: 4px;
+  padding: 8px 10px;
   border-radius: 20px;
-  width: 90%;
+  width: 100%;
   border: none;
   background-color: black;
 }
@@ -120,7 +120,8 @@ footer a p {
   padding: 0;
   margin: 0;
 }
-footer a p:hover{
+
+footer a .active {
   color: #fbd704;
 }
 a {
