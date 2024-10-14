@@ -3,18 +3,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100vh;
 }
 
-header {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
-header p {
-  padding: 0;
-  margin: 0.5rem;
-}
 .image {
   display: flex;
   flex-direction: column;
@@ -24,33 +15,19 @@ header p {
 img {
   width: 35%;
 }
-.icon {
-  margin: 0.5rem;
-  gap: 12px;
-  display: flex;
-  justify-content: space-between;
-}
 
 .home-screen {
   font-family: "Roboto", sans-serif;
   background-image: url("/image/download\ \(12\).jpeg"); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
-  height: 87vh;
+  height: 100%;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* height: 85%; */
+  box-sizing: border-box;
 }
-/* Semi-transparent overlay */
-/* .overlay {
-  background-color: rgba(0, 0, 0, 0.6); 
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  color: white;
-} */
 
 .welcome-message {
   font-weight: 700;
