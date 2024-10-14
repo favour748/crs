@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+header p {
+  padding: 0;
+  margin: 0.5rem;
+}
+.icon {
+  margin: 0.5rem;
+  gap: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-container {
+  padding: 0 1.5rem;
+  border-radius: 10px;
+  height: 90%;
+  width: 100%;
+  max-width: 400px; /* Desktop max width */
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 35%;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.forget-password {
+  width: 100%;
+  text-align: right;
+  display: block;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #2d2d2d;
+  border-radius: 20px;
+  background-color: #2d2d2d;
+  color: #dedede;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #fbd704;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #f3c200; /* Darker yellow on hover */
+}
+
+p {
+  font-size: 16px;
+  margin-top: 6px;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-align: left;
+  color: #75baff;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.sign-up {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Signin */
+.sign-in1 {
+  margin-top: 0rem;
+}
+
+/* forget-passord */
+
+.forget-passord-img {
+  width: 100%;
+  height: 35%;
+  background-image: url(/image/Download_Shrug_concept_illustration_for_free-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.forget-passord-img img {
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-img {
+  width: 100%;
+  height: 35%;
+  background-image: url(/image/wecome.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.welcome-p {
+  width: 100%;
+  height: 100vh;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-p h1 {
+  margin-top: 2rem;
+}
+.welcome-p p {
+  margin-bottom: 2rem;
+}
+.welcome-p a {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #fbd704;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+.welcome-p a:hover {
+  background-color: #f3c200; /* Darker yellow on hover */
+}

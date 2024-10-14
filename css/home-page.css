@@ -1,0 +1,165 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+header {
+  padding: 2rem;
+  background-color: #333;
+  display: flex;
+  gap: 8px;
+  padding: 10px 10px;
+}
+.loge {
+  width: 10%;
+}
+.search-bar {
+  padding: 4px;
+  border-radius: 20px;
+  width: 90%;
+  border: none;
+  background-color: black;
+}
+::placeholder {
+  color: #dedede;
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.slides {
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.recent-crimes {
+  padding: 20px;
+}
+
+.crime-box {
+  background-color: #2d2d2d;
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+}
+.crime-box img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.crime-info {
+  margin: 10px;
+}
+.crime-info h3 {
+  margin: 0 0 5px;
+}
+
+.crime-actions span {
+  margin: 15px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer {
+  background-color: #2d2d2d;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a p {
+  color: #909090;
+  padding: 0;
+  margin: 0;
+}
+footer a p:hover{
+  color: #fbd704;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+}
+*/
+/* Default State */
+/* .nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #909090;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover State */
+/* .nav-link:hover {
+  color: #fbd704; 
+  transform: scale(1.1); 
+  color: #fbd704;
+} */
+
+/* Active State */
+.nav-link.active {
+  color: #ffcc00; /* Different color for active link */
+  font-weight: bold;
+  color: #fbd704;
+}
+
+/* SVG Path Coloring */
+.nav-link svg path {
+  transition: fill 0.3s;
+}
+
+.nav-link:hover svg path {
+  fill: #fbd704; /* Change icon color on hover */
+}
+
+.nav-link.active svg path {
+  fill: #ffcc00; /* Change icon color for active state */
+} */

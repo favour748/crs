@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+.crime-img {
+  width: 100%;
+  height: 35%;
+  background-image: url(/image/report-img.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-color: brown;
+}
+
+.main-container {
+  padding: 0 1rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.label-p {
+  width: 100%;
+  padding: 10px;
+  margin-top: 2rem;
+  margin-bottom: 15px;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  background-color: #2d2d2d;
+  color: #dedede;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  height: 350px;
+  margin-top: 1rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+.grid-container img {
+  width: 60%;
+}
+.grid-container p {
+  font-size: 12px;
+}
+.grid-item:hover {
+  background-color: #65635b;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 10px;
+}
+::placeholder {
+  color: #dedede;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+  color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  background-color: #fbd704;
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.submit-btn:hover {
+  background-color: #f3c200;
+}
+
+footer {
+  background-color: #2d2d2d;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a p {
+  color: #909090;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* .bar:hover {
+  background-color: #f2f2f2;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+} */

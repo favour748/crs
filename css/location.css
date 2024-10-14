@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+/* .location-container {
+  margin: 1rem;
+} */
+h2 {
+  margin-bottom: 0.6rem;
+}
+p {
+  margin-bottom: 10px;
+}
+
+.text-section {
+  margin: 1rem;
+}
+.label-p {
+  width: 100%;
+  padding: 10px;
+  margin-top: 2rem;
+  margin-bottom: 15px;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  background-color: #2d2d2d;
+  color: #dedede;
+  display: flex;
+  gap: 14px;
+}
+#map {
+  background-image: url(/image/Route\ Map\ _\ Data\ Viz\ Project.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 40%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.location-container {
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+  /* opacity: 0.7; */
+  padding: 1rem;
+}
+#crime-form {
+  margin: 1rem;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 10px;
+}
+::placeholder {
+  color: #dedede;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+  color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #fbd704;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+.outline {
+  background-color: black;
+  border: 1px solid #fbd704;
+  color: white;
+}
+/* .outline:hover {
+  background-color: #fbd704;
+  color: black;
+  border: 1px solid #fbd704;
+} */
+btn:hover {
+  background-color: #f3c200; /* Darker yellow on hover */
+}
+footer {
+  background-color: #2d2d2d;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a p {
+  color: #909090;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+}
