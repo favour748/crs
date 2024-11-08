@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <header>
+        <h1>Dashboard</h1>
+        <img src="image/Log.png" alt="Admin Profile" class="profile-pic" />
+      </header>
+
+      <!-- Cards for Summary Statistics -->
+      <div class="stats-cards">
+        <div class="card dashboard-card">
+          <h3>Total Users</h3>
+          <p id="user-count">180</p>
+          <div class="progress-bar">
+            <div style="width: 30%"></div>
+          </div>
+        </div>
+        <div class="card dashboard-card">
+          <h3>Crime Reports</h3>
+          <p id="crime-count">210</p>
+          <div class="progress-bar">
+            <div style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Processing Cases</h3>
+          <p id="processing-count">150</p>
+          <div class="progress-bar">
+            <div style="width: 50%"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Solved Cases</h3>
+          <p id="solved-count">110</p>
+          <div class="progress-bar">
+            <div style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table for Crime Reports -->
+      <div class="reports-section">
+        <h2>Crime Reports</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Crime</th>
+                <th>Location</th>
+                <th>Description</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="report-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <nav class="bottom-nav">
+        <button onclick="logout()">
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+      </nav>
+    </div>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>

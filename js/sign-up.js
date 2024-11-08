@@ -1,16 +1,14 @@
 document
   .getElementById("signin-form")
   .addEventListener("submit", function (event) {
-    // Prevent the form from submitting
     event.preventDefault();
 
-    // Get the form fields
     const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirm-password").value;
+    const userType = document.getElementById("reportType").value; // Get selected user type
 
-    // Simple validation checks
     if (username === "") {
       alert("Please enter your username.");
       return;
@@ -31,9 +29,25 @@ document
       return;
     }
 
-    // If validation passes, redirect to another page
-    alert("Sign-up successful!");
+    let users = JSON.parse(localStorage.getItem("users")) || [];
 
-    // Redirect to a welcome page or any other page
-    window.location.href = "welcome.html"; // Replace with the actual page
+    const userExists = users.some((user) => user.username === username);
+    if (userExists) {
+      alert("Username already exists. Please choose a different one.");
+      return;
+    }
+
+    // Save the user with the selected role
+    const newUser = {
+      username: username,
+      email: email,
+      password: password,
+      role: userType, // Store user type
+    };
+    users.push(newUser);
+
+    localStorage.setItem("users", JSON.stringify(users));
+
+    alert("Sign-up successful! Your data has been saved locally.");
+    window.location.href = "login.html";
   });
