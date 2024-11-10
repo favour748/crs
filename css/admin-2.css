@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* FAQ Card Styling */
+.crime-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 15px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.crime-card.closed .crime-description,
+.crime-card.closed .crime-image {
+  display: none;
+}
+
+.crime-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crime-title {
+  font-size: 1em;
+  color: #333;
+  margin: 0;
+}
+
+.crime-date {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.arrow-icon {
+  font-size: 1.5em;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.crime-card.open .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.crime-description {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.4;
+}

@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   background-color: black;
   color: white;
   height: 100vh;
@@ -15,7 +15,7 @@ body {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 header {
@@ -91,6 +91,8 @@ td {
   padding: 4px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+  /* font-size: 10px; */
+  padding-bottom: 20px;
 }
 
 th {
@@ -126,4 +128,83 @@ th {
 
 .bottom-nav button:hover {
   color: #fbd704;
+}
+/* css */
+.dashboard {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 16px;
+  text-align: center;
+  /* color: #333; */
+}
+
+/* Accordion Card Styling */
+.crime-card {
+  background-color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 15px;
+  cursor: pointer;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.crime-card.closed .crime-content {
+  display: none;
+}
+
+.crime-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crime-title {
+  font-size: 1em;
+  color: #ddd;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.crime-date {
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+.arrow-icon {
+  font-size: 1em;
+  color: #fbd704;
+  transition: transform 0.3s ease;
+}
+
+.crime-card.open .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.crime-content {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+.crime-image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.description-text {
+  background-color: white;
+  width: 100%;
+  height: 10vh;
+  padding: 6px 6px;
+  color: black;
+  border-radius: 4px;
+  margin-bottom: 14px;
 }
