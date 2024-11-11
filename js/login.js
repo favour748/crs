@@ -28,9 +28,9 @@ document
     if (user.role === "Admin") {
       window.location.href = "admin.html";
     } else if (user.role === "Reporter") {
-      window.location.href = "home.html";
+      window.location.href = "welcome.html";
     } else if (user.role === "Police") {
-      window.location.href = "police-dashboard.html"; // Example page for Police role
+      window.location.href = "welcom.html"; // Example page for Police role
     } else {
       alert("User type not recognized.");
     }
